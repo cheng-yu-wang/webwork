@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    html {
+    scroll-behavior: smooth; /* 为整个页面设置平滑滚动行为 */
+   }
+    ul,
+    li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+        body {
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+    .box {
+        display: flex;
+        position: fixed;
+        width: 100%;
+        top: 4%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10; 
+    }
+    .nav {
+        width: 100%;
+        height: 65px;
+        background-color: rgba(0,0,0,.5);
+        display: flex;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .logo img {
+
+        height: 50px;
+        width: auto;
+
+    }
+    .liuyan{
+        display: flex;
+        align-items: center;
+        /* padding: 0 50px; */
+        height: 40px;
+    }
+    .nav a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        color: white;
+        font-family: '宋体';
+        font-size: 18px;
+    }
+
+    .nav>.item {
+        width: 30%;
+        height: 100%;
+        position: relative;
+        transition: .4s;
+    }
+
+    .list {
+        position: absolute;
+        top: 65px;
+        width: 100%;
+        overflow: hidden;
+        max-height: 0px;
+        transition: .4s;
+        border-radius: 0 0 10px 10px;
+        background-color:rgba(0,0,0,.5);
+
+    }
+
+    .itemTwo {
+        height: 65px;
+        transition: .4s;
+    }
+    .nav>.item:hover>.list {
+        max-height: 500px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .itemTwo:hover {
+        background-color: rgba(255, 255, 255, .3);
+    }
+    .sidebar {
+    width: 150px;
+    background-color: none; /* 设置透明背景色，透明度为0.5*/
+    padding: 20px;
+    position: fixed;
+    top: 50px;
+    left: 30px;
+    height: 100vh;
+    overflow-y: auto; /* 当内容超出侧边栏高度时出现滚动条 */
+    opacity: 0.5;
+    line-height: 50px;
+    z-index: 10;
+
+}
+
+.sidebar ul {
+    list-style: none;
+}
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+.sidebar ul li.active{
+    background-color: yellow;
+}
+    .p1,.p2,.p3,.p4{
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-bottom: 0;
+    margin-top: 0;
+    }
+    .banner{
+        width:500px;
+        height: 300px;
+        margin: 0;
+        position: absolute;
+        top:100px;
+        left:100px;
+        z-index: 5;
+    }
+    .banner ul li {
+            list-style: none;
+            position: absolute;
+            top: 100px;
+            left: 80px;
+            display: none;
+        }
+        .banner ul li:first-child {
+            display: block;
+        }
+        .banner ul li img {
+        width: 500px; 
+        height: 300px; 
+    }
+    .Tob_list{
+        width: 500px;
+        height: 500px;
+        background-color: black;
+        position: absolute;
+        top: 130px;
+        left:720px;
+        border: 2px solid black;
+        z-index: 4;
+        opacity: 0.5;
+    }
+     .Tob_list_nav ul{
+        height: 50px;
+     }
+    .Tob_list_nav ul li{
+        list-style: none;
+        float: left;
+        display: flex;
+        color: white;
+        margin-right: 10px;
+        padding-left: 70px;
+        cursor: pointer;
+        height: 50px;
+    }
+    span{
+        position:absolute;
+        left:50px;
+        top: 30px;
+        border:2px solid #3FA1BF;
+        width: 50px;
+    }
+    .Tob_list_content{
+        list-style: none;
+        opacity: 1;
+        position: absolute;
+        top:180px;
+        left:720px;
+        z-index: 11;
+        
+    }
+    .Tob_list_content li img{
+        padding: 5px;
+        width: 200px;
+        height: 100px;
+        opacity: 1;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .Tob_list_content_p{
+        list-style: none;
+        padding: 10px;
+        font-size: 15px;
+        color:white;
+        position: absolute;
+        top:15px;
+        left:220px;
+        width: 250px;
+        
+    }
+    .Tob_list_content_p li{
+        line-height: 7;
+       cursor: pointer;
+    }
+    .Tob_list_content_p li a{
+        color:white;
+    }
+    .Tob_list_content_p li a:hover{
+        text-decoration: underline;
+    }
+    .bj{
+        position:absolute;
+        top: 850px;
+        left:400px;
+        width: 800px;
+        height: 700px;
+    }
+    .zm{
+        position: absolute;top: 850px;left: 220px;
+    }
+    .lunbo2_list{
+        position: absolute;
+        top:1450px;
+        left:200px;
+        display: flex;
+        flex-wrap: wrap;
+        cursor: pointer;
+        z-index: 101;
+    }
+    .lunbo2_list ul li{
+        float: left;
+        list-style: none;
+        margin-left: 10px;
+    }
+
+    .shell {
+            position: absolute;
+            top: 2050px;
+            left: 600px;
+            width: 200px;
+            height: 100px;
+            max-width: 280px;
+            max-height: 250px;
+            margin: 0;
+            color: white;
+            perspective: 1000px;
+            transform-origin: center;
+            cursor: pointer;
+        }
+        #videoPlayer {
+        width: 800px; 
+        height: 600px; 
+        position: absolute; 
+        top: 1750px; 
+        left: 350px; 
+        }
+       
+        .shellcontent {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform-origin: center;
+            transform-style: preserve-3d;
+            transform: translateZ(-30vw) rotateY(0);
+            animation: carousel 9s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
+        }
+
+        .shellitem {
+            position: absolute;
+            width: 60vw;
+            height: 60vw;
+            max-width: 680px;
+            max-height: 450px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            border-radius: 6px;
+            background-size: cover;
+            -webkit-box-reflect: below 25px -webkit-linear-gradient(transparent 50%, rgba(255, 255, 255, 0.3));
+        
+        }
+
+        .shellitem:nth-child(1) {
+            background-image: url(../img/开服通知.jpg);
+            transform: rotateY(0) translateZ(35vw);
+        }
+
+        .shellitem:nth-child(2) {
+            background-image: url(../img/资讯4.png);
+            transform: rotateY(120deg) translateZ(35vw);
+        }
+
+        .shellitem:nth-child(3) {
+            background-image: url(../img/攻略1.png);
+            transform: rotateY(240deg) translateZ(35vw);
+        }
+
+        @keyframes carousel {
+
+            0%,
+            17.5% {
+                transform: translateZ(-35vw) rotateY(0);
+            }
+
+            27.5%,
+            45% {
+                transform: translateZ(-35vw) rotateY(-120deg);
+            }
+
+            55%,
+            72.5% {
+                transform: translateZ(-35vw) rotateY(-240deg);
+            }
+
+            82.5%,
+            100% {
+                transform: translateZ(-35vw) rotateY(-360deg);
+            }
+        }
+        
+        .swiper-list{
+			height: 300px;
+			position: absolute;
+            top: 2930px;
+            left: 450px;
+			overflow: hidden;
+    		padding: 30px 0;
+		}
+		.swiper-main{
+			height: 100%;
+			position: relative;
+		}
+		.swiper-main img{
+			height: 100%;
+			display: block;
+			position: absolute;
+			top: 0px;
+			border-radius: 4px;
+			display: inline-block;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+		.btn{
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 30px;
+    		height: 30px;
+    		z-index: 1002;
+		}
+		.leftBtn{
+			left: 0px;
+		}
+		.rightBtn{
+			right: 0px;
+		}
+       .close{
+        position: fixed;
+        top: 300px;
+        left: 1250px;
+        z-index: 200;
+       }
+       .open{
+        position: fixed;
+        top: 430px;
+        left: 1400px;
+        z-index: 200;
+       }

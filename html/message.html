@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="../css/message.css">
+
+<body>
+    <div class="box">
+        <ul class="nav">
+            <li class="item">
+                <a href="homepage.html">官网首页</a>
+            </li>
+            <li class="item">
+                <a href="information.html">最新资讯</a>
+            </li>
+            <li class="item">
+                <a href="#"></a>
+            </li>
+            <li class="item">
+                <a href="active.html">活动展示</a>
+            </li>
+            <li class="item">
+                <a href="#">客服中心</a>
+                <ul class="list">
+                    <li class="itemTwo"><a href="login.html"><img src="../img/login.png" class="liuyan "></a></li>
+                    <li class="itemTwo"><a href="message.html"><img src="../img/留言板.png" class="liuyan"></a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <img src="../img/标题2.png" style="position: fixed;top: -10px;left: 530px;z-index: 30;">
+    <img src="../img/留言板背景.jpg" style="position: fixed;width: 100%;">
+    <div class="message">
+        <img src="../img/小舞留言.png" style="width: 450px;height: 500px; position: absolute;top: -5px;left: -40px;">
+        <img src="../img/三七logo.png"  style="width: 200px;height: 50px;position: absolute;left: 780px;">
+        <h1 style="position: relative;top: 50px;left: 300px;">留言联系</h1>
+        <label style="position: relative;top: 60px;left: 300px;">昵称</label>
+        <input type="text" style="position: relative;top: 60px;left: 310px;" id="username">
+        
+        <label style="position: relative;top: 60px;left: 400px;">姓名</label>
+        <input type="text" style="position: relative;top: 60px;left: 410px;" id='names'>
+        <label style="position: relative;top: 150px;left: -110px;">电子邮箱</label>
+        <input type="email" name="email" placeholder="请输入电子邮件地址" style="position: relative;top: 150px;left: -100px;" id="eml">
+        <label style="position: relative;top: 150px;left: -42px;">电话</label>
+        <input type="text" style="position: relative;top: 150px;left: -32px;" id="dh">
+        <label style="position: relative;top: 200px;left: -550px;">有什么问题请留言</label>
+        <textarea placeholder="请编辑您的留言" style="position: relative;top: 210px;left: 300px;width: 600px;height: 100px;" id="message"></textarea>
+        <input type="submit" value="提交"  style="position: relative;top: 250px;left: -230px;width: 80px;height: 30px;" id="submitBtn">
+        <input type="submit" value="留言登选"  style="position: relative;top: 250px;left: -100px;width: 80px;height: 30px;" class="liuyandengxuan">
+    </div>
+    <div id="messageBoard">
+        <p style="position:fixed;left: 900px;top:670px;font-size: 20px;cursor: pointer;" class="fanhui6">返回</p>
+    </div>
+</body>
+<script src="../js/message.js"></script>
+</html>

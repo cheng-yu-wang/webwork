@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/jquery-3.7.1.js"></script>
+    <script src="../js/slider_card.js"></script>
+    <link rel="stylesheet" href="../css/information.css">
+    <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            let close = document.querySelector('.close');
+            close.onclick = function(event) {
+                // 阻止事件冒泡，避免点击子元素时触发父元素的事件
+                event.stopPropagation();
+                // 隐藏.close元素
+                close.style.display = 'none';
+            };
+            let open = document.querySelector('.open');
+            open.onclick = function(event) {
+                // 阻止事件冒泡，避免点击子元素时触发父元素的事件
+                event.stopPropagation();
+                // 隐藏.close元素
+                close.style.display = 'block';
+            };
+        });
+    </script>
+</head>
+<body>
+    <img src="../img/展开.png" class="open">
+    <div class="close">
+        <img src="../img/收起.png" class="closebtn" style="position: relative;top: -100px;">
+        <img src="../img/右悬浮二维码.png">
+        <img src="../img/提示框2.png" style="position: relative;top: -170px;left: 55px;width: 60%;">
+        <img src="../img/提示框3.png" style="position: relative;top: -150px;left: 55px;width: 60%;">
+    </div>
+    <div class="box">
+        <ul class="nav">
+            <li class="item">
+                <a href="homepage.html">官网首页</a>
+            </li>
+            <li class="item">
+                <a href="information.html">最新资讯</a>
+            </li>
+            <li class="item">
+                <a href="#"></a>
+            </li>
+            <li class="item">
+                <a href="active.html">活动展示</a>
+            </li>
+            <li class="item">
+                <a href="#">客服中心</a>
+                <ul class="list">
+                    <li class="itemTwo"><a href="login.html"><img src="../img/login.png" class="liuyan "></a></li>
+                    <li class="itemTwo"><a href="message.html"><img src="../img/留言板.png" class="liuyan"></a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="sidebar">
+        <ul>
+            <li><a href="#p1"><img src="../img/侧标1.png"></a></li>
+            <li><a href="#p2"><img src="../img/侧标2.png"></a></li>
+            <li><a href="#p3"><img src="../img/侧标3.png"></a></li>
+            <li><a href="#p4"><img src="../img/侧标4.png"></a></li>
+        </ul>
+    </div>
+    <img src="../img/左浮窗二维码.png" style="position:fixed; top:330px;left:20px;z-index: 100;">
+    
+   
+    <div>
+        <img src="../img/标题2.png" style="position:fixed;left:540px;top:-10px;z-index: 100;">
+        <img src="../img/副标1.png" style="position:absolute;left:60px;top:80px;">
+        <div class="banner">
+            <ul>
+                <li><img src="../img/出发-探索斗罗大世界-ljt690.jpg"></li>
+                <li><img src="../img/启程周年盛典-lh.jpg"></li>
+                <li><img src="../img/开服通知.jpg"></li>
+            </ul>
+        </div>
+        <div class="Tob_list">
+            <div class="Tob_list_nav">
+                <ul>
+                    <li>最新</li>
+                    <li>资讯</li>
+                    <li>活动</li>
+                    <li>攻略</li>
+                    <span></span>
+                </ul>
+            </div>
+        </div>
+        <div class="Tob_list_content" style="display: block;">
+            <li>
+                <img src="../img/最新1.png">
+                <img src="../img/最新2.jpg">
+                <img src="../img/最新3.png">
+                <img src="../img/最新4.jpg">
+            </li>
+            <ul class="Tob_list_content_p">
+            <li><p><a href="active.html">即将上线 | 【荧荧离火】活动...</a></p></li>
+            <li><p><a href="active.html">即将上线 | 【众神回馈】活动...</a></p></li>
+            <li><p><a href="active.html">福利活动 | 官方论坛正式上线...</a></p></li>
+            <li><p><a href="active.html">即将上线 | 【神草幽梦】活动...</a></p></li>
+            </ul>
+        </div>
+        <div class="Tob_list_content" style="display: none;">
+            <li>
+                <img src="../img/资讯2.jpg">
+                <img src="../img/最新1.png">
+                <img src="../img/资讯2.jpg">
+                <img src="../img/资讯4.png">
+            </li>
+            <ul class="Tob_list_content_p">
+                <li><p><a href="active.html">斗罗专访 | 双生太子,请指教...</a></p></li>
+                <li><p><a href="active.html">策划Q&A   你知道的都在...</a></p></li>
+                <li><p><a href="active.html">斗罗专访 | 双生太子,请指教...</a></p></li>
+                <li><p><a href="active.html">活动公告 | 唐晨武魂真身...</a></p></li>
+            </ul>
+        </div>
+        <div class="Tob_list_content" style="display: none;">
+            <li>
+                <img src="../img/资讯4.png">
+                <img src="../img/最新2.jpg">
+                <img src="../img/最新1.png">
+                <img src="../img/资讯2.jpg">
+            </li>
+            <ul class="Tob_list_content_p">
+                <li><p><a href="active.html">斗罗专访 | 【修罗炼魂】&玩...</a></p></li>
+                <li><p><a href="active.html">卡池预告 |  强攻系SP【修罗...</a></p></li>
+                <li><p><a href="active.html">第三周年 | 【周年庆活动】...</a></p></li>
+                <li><p><a href="active.html">即将上线 |  珍玉惊弦歌活动预告...</a></p></li>
+            </ul>
+        </div>
+        <div class="Tob_list_content" style="display: none;">
+            <li>
+                <img src="../img/1攻略1.png">
+                <img src="../img/攻略2.png">
+                <img src="../img/1攻略1.png">
+                <img src="../img/攻略3.png">
+            </li>
+            <ul class="Tob_list_content_p">
+                <li><p><a href="active.html">进阶攻略 |  最新版全战斗场景...</a></p></li>
+                <li><p><a href="active.html">魂师攻略 |  【九彩神女.宁荣荣...</a></p></li>
+                <li><p><a href="active.html">魂师攻略 | 【唐三.小舞】快...</a></p></li>
+                <li><p><a href="active.html">魂师攻略 |  【龙皇斗罗】快速...</a></p></li>
+            </ul>
+        </div>
+            <img src="../img/背景1.png" style="height: 830px;width: 1400px;position: absolute;top: 840px;">
+            <img src="../img/副标2.png" style="position: absolute;top:900px;left: 60px;">
+            <ul class="lunbo2_list_content">
+                <li style="display: block;">
+                  <img src="../img/小舞zm.png" class="zm">
+                  <img src="../img/小舞bj.png" class="bj">
+                </li>
+                <li style="display: none;">
+                <img src="../img/马红俊zm.png" class="zm">
+                <img src="../img/马鸿俊bj.png" class="bj">
+                </li>
+                <li style="display: none;">
+                <img src="../img/戴沐白zm.png" class="zm">
+                <img src="../img/戴沐白bj.png" class="bj">
+                </li>
+                <li style="display: none;">
+                <img src="../img/朱竹清zm.png" class="zm">
+                <img src="../img/朱竹清bj.png" class="bj">
+                </li>
+                <li style="display: none;">
+                <img src="../img/宁荣荣zm.png" class="zm">
+                <img src="../img/宁荣荣bj.png" class="bj">
+                </li>
+                <li style="display: none;">
+                <img src="../img/奥斯卡zm.png" class="zm">
+                <img src="../img/奥斯卡bj.png" class="bj">
+                </li>
+           </ul>
+           <ul class="lunbo2_list">
+           
+            <li><img src="../img/小舞tx.png"></li>
+            <li><img src="../img/马红俊tx.png"></li>
+            <li><img src="../img/戴沐白tx.png"></li>
+            <li><img src="../img/朱竹清tx.png"></li>
+            <li><img src="../img/宁荣荣tx.png"></li>
+            <li><img src="../img/奥斯卡tx.png"></li>
+           </ul>
+           <img src="../img/副标3.png" style="position: absolute;top: 1750px;left: 60px;">
+           <div class="shell">
+                <div class="shellcontent">
+                    <div class="shellitem" data-video="../img/视频1.mp4"></div>
+                    <div class="shellitem" data-video="../img/视频2_compressed.mp4"></div>
+                    <div class="shellitem" data-video="../img/视频3_compressed.mp4"></div>
+                </div>
+           </div>
+           <video id="videoPlayer" style="display:none;" controls  autoplay muted loop></video>
+
+        <div class="swiper-list-card swiper-list" style="z-index: 21;">	
+        <div class="swiper-main-card swiper-main"></div>
+        <img id="prev-card" class="btn leftBtn" src="../img/箭头左.png" alt="">
+        <img id="next-card" class="btn rightBtn" src="../img/箭头右.png" alt="">
+        </div>
+        <div style="position: absolute;top: 2600px;left: 250px; width: 900px;">
+            <img src="../img/游戏介绍.jpg" style="width: 1000px;height: 350px;">
+            <p style="position: relative;top: -300px;left:30px;color: white;line-height: 2;">
+            《斗罗大陆魂师对决》是一款极具特色的战略卡牌手游，主要有以下特点：
+            原著高度还原：以同名小说为背景，剧情、角色、武魂、魂环等元素高度贴合原著，让粉丝重温经典故事，极易产生共鸣.
+            策略战斗体验：魂师分为 5 种类型及多种元素属性，相互克制，玩家可搭配不同魂师组成战斗阵容，并根据战斗情况选择合适的技能释放，策略性强.
+            丰富养成体系：提供武魂觉醒、魂师放逐、重生、回退、灵魂链接等多种培养方式，还可通过强化、重铸、精炼等途径提升魂骨属性，助力玩家提升魂师实力.
+            社交互动乐趣：好友可互相支援魂师，联盟系统中盟主可任命管理，提高联盟等级可解锁更多道具兑换和更高难度的联盟远征，增强了玩家之间的互动与合作.
+            精美画面音效：采用先进技术打造立体逼真的斗罗世界，人物建模精细，场景细节丰富，技能特效华丽，背景音乐和技能音效出色，带来视听盛宴.
+            福利丰厚诱人：新手玩家可获得丰富福利和新手奖励，助力快速上手和成长，让玩家在游戏前期能够更顺利地组建阵容和提升实力 。
+            </p>
+            <div style="position: absolute;top: 360px;background-color: black;opacity: 0.5;width: 1000px;height: 240px;"></div>
+        </div>
+        <img src="../img/bg1.jpg" id="p1" class="p1">
+    </div>
+    <div>
+    <video  autoplay muted loop id="p2" class="p2">
+        <source src="../img/斗罗大陆2.mp4" type="video/mp4">
+    </video>
+    </div>
+    <div>
+    <img src="../img/bg2.jpg" id="p3" class="p3">
+    </div>
+    <div>
+    <img src="../img/bg2.jpg" id="p4" class="p4">
+    </div>
+</body>
+<script src="../js/information.js"></script>
+</html>
